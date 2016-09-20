@@ -7,7 +7,7 @@ LABEL Description="Titan Graph DB with Gremlin to be used with Cassandra and Ela
 
 WORKDIR /opt/titan-1.0.0-hadoop1
 
-RUN curl -x $HTTP_PROXY -o /opt/titan.zip http://s3.thinkaurelius.com/downloads/titan/titan-1.0.0-hadoop1.zip
+RUN curl -o /opt/titan.zip http://s3.thinkaurelius.com/downloads/titan/titan-1.0.0-hadoop1.zip
 RUN ls -al /opt
 RUN unzip /opt/titan.zip -d /opt/ && \
     rm /opt/titan.zip
