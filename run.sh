@@ -52,7 +52,7 @@ sed -i "s/channelizer: org.apache.tinkerpop.gremlin.server.channel.WebSocketChan
 
 # create the backing file
 echo "gremlin.graph=com.thinkaurelius.titan.core.TitanFactory
-storage.backend=cassandrathrift
+storage.backend=$CASSANDRA_BACKEND
 storage.hostname=cassandra" > conf/gremlin-server/titan-cassandra-server.properties
 
 $BIN/gremlin-server.sh conf/gremlin-server/gremlin-server.yaml
