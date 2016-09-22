@@ -1,7 +1,7 @@
 #!/bin/bssh
 
 BIN=./bin
-
+SLEEP_INTERVAL_S=2
 # wait_for_startup friendly_name host port timeout_s
 wait_for_startup() {
     local friendly_name="$1"
